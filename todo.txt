@@ -1,0 +1,9 @@
+alphaLearn 
+
+this is a lib of various sub projects 
+
+concepts 
+
+1). binary search trees
+	- min max
+	- alpha beta pruning 

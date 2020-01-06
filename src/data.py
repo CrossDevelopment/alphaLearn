@@ -2,24 +2,26 @@ import random
 
 x=20
 
-def genRan(i):
-    y=0
-    z=[]
-    while(y<i):
-        j=random.randint(y,i)
-        z.append(j)       
-        y=y+1
+def genRan(num):
+    count=1
+    numbers=[]
+    while(count<=num):
+        rand_number=random.randint(count,num)
+        numbers.append(rand_number)       
+        count=count+1
     
-    length=len(z)
+    length=len(rand_number)
 
-    for i in range(length):
-        for j in range(0,length-i-1):
-            if z[j] > z[j+1]:
-                z[j], z[j+1] = z[j+1], z[j]
-
-
+    innerloop=0;
+    outerloop=0;
+    while outerloop<length:
+        while innerloop<length:
+            if numbers[innerloop] > numbers[innerloop+1]:
+                numbers[innerloop], numbers[innerloop+1] = numbers[innerloop+1], numbers[innerloop]
+            innerloop+=1
+        outerloop+=1
     
     
-    return z
+    return numbers
         
-genRan(x)
+

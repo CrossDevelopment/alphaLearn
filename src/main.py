@@ -4,6 +4,6 @@ def main(num):
     list=data.genRan(num)
     print(list)
 
-main()
+main(20)
 
 

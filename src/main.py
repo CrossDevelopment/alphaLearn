@@ -1,9 +1,9 @@
 import data
+import random
+def main(num):
+    list=data.genRan(num)
+    print(list)
 
-def main(p):
-    x=data.genRan(p)
-    print(x)
-
-main(5)
+main()
 
 

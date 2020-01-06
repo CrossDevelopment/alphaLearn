@@ -1,7 +1,5 @@
 import random
 
-x=20
-
 def genRan(num):
     count=1
     numbers=[]

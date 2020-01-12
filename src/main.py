@@ -1,9 +1,11 @@
 import data
 import random
-def main(num):
+
+def main():
+    num = int(input("Enter an integer: "))
     list=data.genRan(num)
     print(list)
+    
 
-main(20)
-
-
+if __name__ == "__main__":
+    main()

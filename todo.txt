@@ -1,9 +1,14 @@
 alphaLearn 
 
-this is a lib of various sub projects 
+this is a lib of various sub projects that 
 
 concepts 
 
 1). binary search trees
 	- min max
 	- alpha beta pruning 
+
+
+2). saving data and injecting (simulation)
+    - add the ability to export the data from alphalearn (tranning set)
+    - add the ability to inject tranning data into alphalearn

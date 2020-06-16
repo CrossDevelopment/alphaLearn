@@ -24,5 +24,3 @@ def genRan(num):
     
     
     return numbers
-        
-

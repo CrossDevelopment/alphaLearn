@@ -15,13 +15,15 @@ def genRan(num):
 
     innerloop=0;
     outerloop=0;
-    while outerloop<length:
-        while innerloop<length:
-            if numbers[innerloop] > numbers[innerloop]:
-                numbers[innerloop], numbers[innerloop] = numbers[innerloop+1], numbers[innerloop]
+    for outerloop in range(length):
+        for innerloop in range(length-1):
+            if numbers[innerloop] >= numbers[innerloop+1]:
+                temp=numbers[innerloop]
+                numbers[innerloop]=numbers[innerloop+1]
+                numbers[innerloop+1]=temp
+                
             innerloop+=1
         outerloop+=1
-    
     
     return numbers
         

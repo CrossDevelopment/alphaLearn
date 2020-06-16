@@ -7,14 +7,14 @@
 
 
 class Node:
-    rightChild,leftChild,data = None, None, None
+    rightNode,leftNode,node = None, None, None
     def __init__(self,key):
-        self.leftChild = None
-        self.rightChild = None
-        self.data = key
+        self.leftNode = None
+        self.rightNode = None
+        self.node = key
 
 class Tree: 
-    root = None
+    root = None 
     size = 0
     def __init__(self):
         self.size = 0
@@ -27,5 +27,4 @@ class Tree:
     def search(self,node,num):
         return
     def print_tree(self)
-
 
